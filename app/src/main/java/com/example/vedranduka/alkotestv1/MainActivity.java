@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 double timeResting = Double.parseDouble(temp);
 
                 Data d = new Data(amountDrinking, alcoholPercentage, userMass, g, timeDrinking, timeResting);
-                //Toast.makeText(MainActivity.this, d.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, d.toString(), Toast.LENGTH_SHORT).show();
                 reset();
                 startSecondActivity(d);
             }

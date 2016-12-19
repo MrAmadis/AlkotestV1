@@ -15,7 +15,8 @@
         android:id="@+id/textViewResult"
         android:hint="Rezultat formule"
         android:layout_alignTop="@+id/textView2"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +26,8 @@
         android:id="@+id/textView2"
         android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textViewTimeUntilAbleToDrive" />
+        android:layout_alignStart="@+id/textViewTimeUntilAbleToDrive"
+        android:layout_alignLeft="@+id/textViewTimeUntilAbleToDrive" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +55,8 @@
         android:id="@+id/textViewTimeUntilAbleToDrive"
         android:hint="timeUntillAbleToDrive"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/textViewResult" />
+        android:layout_toStartOf="@+id/textViewResult"
+        android:layout_toLeftOf="@+id/textViewResult" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +66,9 @@
         android:id="@+id/textView6"
         android:layout_alignTop="@+id/textViewTimeUntilAbleToDrive"
         android:layout_toEndOf="@+id/textViewTimeUntilAbleToDrive"
-        android:layout_marginStart="21dp" />
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/textViewTimeUntilAbleToDrive" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +78,8 @@
         android:id="@+id/textView7"
         android:layout_below="@+id/textViewTimeUntilAbleToDrive"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="89dp" />
+        android:layout_marginTop="89dp"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +87,8 @@
         android:id="@+id/textViewTimeInput"
         android:layout_alignBottom="@+id/textView7"
         android:layout_alignStart="@+id/textViewTimeUntilAbleToDrive"
-        android:hint="vrijemeInput" />
+        android:hint="vrijemeInput"
+        android:layout_alignLeft="@+id/textViewTimeUntilAbleToDrive" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,7 +98,9 @@
         android:id="@+id/textView9"
         android:layout_alignTop="@+id/textView7"
         android:layout_toEndOf="@+id/textViewTimeInput"
-        android:layout_marginStart="27dp" />
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/textViewTimeInput" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,7 +109,8 @@
         android:layout_marginTop="43dp"
         android:hint="postotakPromilaAfter"
         android:layout_below="@+id/textView7"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -110,6 +120,7 @@
         android:id="@+id/textView12"
         android:layout_alignBaseline="@+id/textViewPercentageAfter"
         android:layout_alignBottom="@+id/textViewPercentageAfter"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
 
 </RelativeLayout>

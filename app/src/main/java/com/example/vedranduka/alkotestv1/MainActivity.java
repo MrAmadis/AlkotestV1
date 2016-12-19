@@ -10,6 +10,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.vedranduka.alkotestv1.R.id.radioMale;
+
 
 public class MainActivity extends AppCompatActivity {
     TextView viewAmountDrinking;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         linkData();
-
+        setTestData();
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 int selectedId = radioSex.getCheckedRadioButtonId();
                 RadioButton radioSexButton = (RadioButton) findViewById(selectedId);
                 Data.genderEnum g;
-                if(radioSexButton.getText() == "Male")
+                if(radioSexButton.getText().equals("Male"))
                     g = Data.genderEnum.Male;
                 else
                     g = Data.genderEnum.Female;
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 double timeResting = Double.parseDouble(temp);
 
                 Data d = new Data(amountDrinking, alcoholPercentage, userMass, g, timeDrinking, timeResting);
-                Toast.makeText(MainActivity.this, d.toString(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, d.toString(), Toast.LENGTH_SHORT).show();
                 reset();
                 startSecondActivity(d);
             }
@@ -87,5 +89,14 @@ public class MainActivity extends AppCompatActivity {
         radioSex.clearCheck();
         viewTimeDrinking.setText("");
         viewTimeResting.setText("");
+    }
+
+    private void setTestData() {
+        viewAmountDrinking.setText("2.5");
+        viewAlcoholPercentage.setText("4.5");
+        viewUserMass.setText("100");
+        radioSex.check(radioMale);
+        viewTimeDrinking.setText("3");
+        viewTimeResting.setText("2");
     }
 }

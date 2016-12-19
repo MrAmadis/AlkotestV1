@@ -19,12 +19,12 @@ public class Main2Activity extends AppCompatActivity {
         else
             d = null;
 
-        double consumedAlcohol = d.amountDrinking * d.alcoholPercentage * 0.789;
+        double consumedAlcohol = d.amountDrinking * d.alcoholPercentage * 0.789 * 10;
 
-        double bloodAlcoholPercentage = (consumedAlcohol/ (d.userMass * d.gender.getNumVal())) * 100;
+        double bloodAlcoholPercentage = (consumedAlcohol / (d.userMass * d.gender.getNumVal())) / 10;
 
-        double finalAlcoholPercentage = bloodAlcoholPercentage - d.timeDrinking * 0.015;
+        double finalAlcoholPercentage = bloodAlcoholPercentage - (d.timeDrinking * 0.015);
         TextView result = (TextView)findViewById(R.id.textViewResult);
-        result.setText(String.format("%s",finalAlcoholPercentage));
+        result.setText( String.valueOf(finalAlcoholPercentage));
     }
 }

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/alcoholQuantityTextBox"
-        android:hint="Alcohol quantity (liters)"
+        android:hint="@string/alcohol_quantity_liters"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:inputType="numberDecimal" />
@@ -29,13 +29,13 @@
         android:layout_alignStart="@+id/alcoholQuantityTextBox"
         android:layout_alignLeft="@id/alcoholQuantityTextBox"
         android:layout_marginTop="22dp"
-        android:hint="Alcohol percentage (%)" />
+        android:hint="@string/alcohol_percentage" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/userMassEditText"
-        android:hint="User mass (kg)"
+        android:hint="@string/user_mass_kg"
         android:layout_below="@+id/alcoholPercentageTextBox"
         android:layout_alignStart="@+id/alcoholPercentageTextBox"
         android:layout_alignLeft="@+id/alcoholPercentageTextBox"
@@ -53,14 +53,14 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"
+            android:text="@string/male"
             android:id="@+id/radioMale"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
+            android:text="@string/female"
             android:id="@+id/radioFemale"
             android:checked="false" />
 
@@ -74,7 +74,7 @@
         android:id="@+id/timeDrinkingTimeBox"
         android:layout_below="@+id/radioSex"
         android:layout_marginTop="23dp"
-        android:hint="Time spent drinking (hours)"
+        android:hint="@string/time_spent_drinking_hours"
         android:layout_alignEnd="@+id/alcoholPercentageTextBox"
         android:layout_alignRight="@+id/alcoholPercentageTextBox" />
 
@@ -87,7 +87,7 @@
         android:layout_below="@+id/timeDrinkingTimeBox"
         android:layout_alignStart="@+id/timeDrinkingTimeBox"
         android:layout_marginTop="25dp"
-        android:hint="Time spent after drinking (hours)"
+        android:hint="@string/time_spent_after_drinking_hours"
         android:layout_alignEnd="@+id/alcoholPercentageTextBox"
         android:layout_alignLeft="@+id/timeDrinkingTimeBox"
         android:layout_alignRight="@+id/alcoholPercentageTextBox" />
@@ -97,7 +97,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How drunk am I ?"
+        android:text="@string/how_drunk_am_i"
         android:id="@+id/submitButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -107,7 +107,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gender:"
+        android:text="@string/gender"
         android:id="@+id/textViewResult"
         android:layout_marginTop="18dp"
         android:layout_below="@+id/userMassEditText"

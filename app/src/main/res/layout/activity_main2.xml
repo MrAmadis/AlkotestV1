@@ -12,115 +12,92 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewResult"
-        android:hint="Rezultat formule"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignEnd="@+id/textView3"
-        android:layout_alignRight="@+id/textView3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Imate"
+        android:text="@string/imate"
         android:id="@+id/textView2"
         android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textViewTimeUntilAbleToDrive"
-        android:layout_alignLeft="@+id/textViewTimeUntilAbleToDrive" />
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult"
+        android:hint="@string/rezultat_formule"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Promila alkohola u krvi"
+        android:text="@string/promila_alkohola_u_krvi"
         android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textViewResult"
+        android:layout_alignLeft="@+id/textViewResult"
+        android:layout_alignStart="@+id/textViewResult" />
 
     <TextView
+        android:text="Za uneseni broj sati ćete imati"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Da biste imali 0.5 promila u krvi, morate sačekati"
-        android:id="@+id/textView4"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView"
         android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewTimeUntilAbleToDrive"
-        android:hint="timeUntillAbleToDrive"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/textViewResult"
-        android:layout_toLeftOf="@+id/textViewResult" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="sati"
-        android:id="@+id/textView6"
-        android:layout_alignTop="@+id/textViewTimeUntilAbleToDrive"
-        android:layout_toEndOf="@+id/textViewTimeUntilAbleToDrive"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_toRightOf="@+id/textViewTimeUntilAbleToDrive" />
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextAmountResting"
+        android:hint="Broj sati u decimalama"
+        android:textSize="22sp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Za"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/textViewTimeUntilAbleToDrive"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="89dp"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewTimeInput"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignStart="@+id/textViewTimeUntilAbleToDrive"
-        android:hint="vrijemeInput"
-        android:layout_alignLeft="@+id/textViewTimeUntilAbleToDrive" />
+        android:layout_marginTop="46dp"
+        android:id="@+id/textViewRestTime"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text='"Unesite broj sati" '
+        android:layout_below="@+id/editTextAmountResting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="sati ćete imati "
-        android:id="@+id/textView9"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_toEndOf="@+id/textViewTimeInput"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_toRightOf="@+id/textViewTimeInput" />
+        android:text="@string/promila_alkohola_u_krvi"
+        android:id="@+id/textView5"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textViewRestTime"
+        android:layout_alignLeft="@+id/textViewRestTime"
+        android:layout_alignStart="@+id/textViewRestTime" />
 
-    <TextView
+    <Button
+        android:text="Provjeri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewPercentageAfter"
-        android:layout_marginTop="43dp"
-        android:hint="postotakPromilaAfter"
-        android:layout_below="@+id/textView7"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="promila alkohola u krvi"
-        android:id="@+id/textView12"
-        android:layout_alignBaseline="@+id/textViewPercentageAfter"
-        android:layout_alignBottom="@+id/textViewPercentageAfter"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        android:id="@+id/btnPotvrdi"
+        android:layout_alignBottom="@+id/editTextAmountResting"
+        android:layout_toRightOf="@+id/editTextAmountResting"
+        android:layout_toEndOf="@+id/editTextAmountResting" />
 
 </RelativeLayout>

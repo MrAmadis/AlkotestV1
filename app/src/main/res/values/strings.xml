@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AlkotestV1</string>
+    <string name="alcohol_percentage">Alcohol percentage (%)</string>
+    <string name="alcohol_quantity_liters">Alcohol quantity (liters)</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender:</string>
+    <string name="how_drunk_am_i">How drunk am I ?</string>
+    <string name="male">Male</string>
+    <string name="time_spent_after_drinking_hours">Time spent after drinking (hours)</string>
+    <string name="time_spent_drinking_hours">Time spent drinking (hours)</string>
+    <string name="user_mass_kg">User mass (kg)</string>
+    <string name="da_biste_imali_0_5_promila_u_krvi_morate_sa_ekati">Da biste imali 0.5 promila u krvi, morate sačekati</string>
+    <string name="imate">Imate</string>
+    <string name="rezultat_formule">Rezultat formule</string>
+    <string name="promila_alkohola_u_krvi">promila alkohola u krvi</string>
 </resources>
